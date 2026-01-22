@@ -110,36 +110,42 @@ class MainActivity : AppCompatActivity() {
             loadUrl(url)
         }
 
-        binding.btnBack.setOnClickListener {
-            if (binding.webView.canGoBack()) {
-                binding.webView.goBack()
+        binding.bottomNav.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.btnBack -> {
+                    if (binding.webView.canGoBack()) {
+                        binding.webView.goBack()
+                    }
+                    true
+                }
+                R.id.btnForward -> {
+                    if (binding.webView.canGoForward()) {
+                        binding.webView.goForward()
+                    }
+                    true
+                }
+                R.id.btnRefresh -> {
+                    binding.webView.reload()
+                    true
+                }
+                R.id.btnHome -> {
+                    loadHomePage()
+                    true
+                }
+                R.id.btnTabs -> {
+                    showTabsDialog()
+                    true
+                }
+                R.id.btnHistory -> {
+                    showHistoryDialog()
+                    true
+                }
+                R.id.btnPip -> {
+                    enterPipMode()
+                    true
+                }
+                else -> false
             }
-        }
-
-        binding.btnForward.setOnClickListener {
-            if (binding.webView.canGoForward()) {
-                binding.webView.goForward()
-            }
-        }
-
-        binding.btnRefresh.setOnClickListener {
-            binding.webView.reload()
-        }
-
-        binding.btnHome.setOnClickListener {
-            loadHomePage()
-        }
-
-        binding.btnTabs.setOnClickListener {
-            showTabsDialog()
-        }
-
-        binding.btnHistory.setOnClickListener {
-            showHistoryDialog()
-        }
-
-        binding.btnPip.setOnClickListener {
-            enterPipMode()
         }
     }
 
