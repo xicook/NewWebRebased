@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewWeb</string>
+    <string name="version_name">Sky (Rebased)</string>
+
+    <!-- Navigation -->
+    <string name="nav_back">Voltar</string>
+    <string name="nav_forward">Avançar</string>
+    <string name="nav_refresh">Atualizar</string>
+    <string name="nav_home">Início</string>
+    <string name="nav_tabs">Abas</string>
+    <string name="nav_history">Histórico</string>
+    <string name="nav_pip">PIP</string>
+
+    <!-- URL Bar -->
+    <string name="url_hint">Pesquise ou digite URL</string>
+    <string name="btn_go">Ir</string>
+
+    <!-- WebShield -->
+    <string name="blocked_title">This Website is blocked by WebShield</string>
+    <string name="blocked_message">Este site foi bloqueado para sua proteção</string>
+    <string name="blocked_button">Go back to Home Page</string>
+
+    <!-- Tabs -->
+    <string name="tabs_title">Abas</string>
+    <string name="new_tab">Nova Aba</string>
+    <string name="close_tab">Fechar</string>
+
+    <!-- History -->
+    <string name="history_title">Histórico</string>
+    <string name="clear_history">Limpar</string>
+    <string name="history_cleared">Histórico limpo</string>
+
+    <!-- PIP -->
+    <string name="pip_not_available">PIP não disponível nesta versão</string>
+</resources>
